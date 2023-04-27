@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+}
+body {
+    background-color: #010409;
+}
+nav {
+    background-color: #171b23;
+    height: 8vh;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+nav p {
+    align-self: center;
+    margin-right: auto;
+    margin-left: -1rem;
+}
+nav img {
+    filter: invert(100%);
+    width: 2rem;
+    margin-right: auto;
+    margin-left: 1rem;
+}
+.sidebar {
+    background-color: #0d1117;
+}
+.content {
+    display: flex;
+}
+.sidebar {
+    flex: 1;
+    min-height: 100vh;
+}
+.main {
+    flex: 4;
+}
