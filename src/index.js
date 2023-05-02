@@ -1,1 +1,2 @@
-console.log("yeah brother")
+import { handleClicks, renderPage } from "./handleDom";
+handleClicks();
