@@ -1,11 +1,8 @@
-function handleClicks() {
-    const modal = document.querySelector(".modalContent");
-    document.addEventListener("click", e => {
-        if(e.target.className === "newTask") {
-            modal.style.display = "flex";
-        }
-    });
+function createTask() {
+    const taskBtn = document.querySelector(".newTask");
+    const modal = document.querySelector(".modal");
+    taskBtn.onclick = function() {
+        modal.style.display = "block";
+    }
 }
-export {
-    handleClicks
-}
+export default createTask;

@@ -1,2 +1,2 @@
-import { handleClicks, renderPage } from "./handleDom";
-handleClicks();
+import createTask from "./handleDom";
+createTask();

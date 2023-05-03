@@ -16,7 +16,7 @@
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"handleClicks\": () => (/* binding */ handleClicks)\n/* harmony export */ });\nfunction handleClicks() {\n    const modal = document.querySelector(\".modalContent\");\n    document.addEventListener(\"click\", e => {\n        if(e.target.className === \"newTask\") {\n            modal.style.display = \"flex\";\n        }\n    });\n}\n\n\n//# sourceURL=webpack://todo-list/./src/handleDom.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction createTask() {\n    const taskBtn = document.querySelector(\".newTask\");\n    const modal = document.querySelector(\".modal\");\n    taskBtn.onclick = function() {\n        modal.style.display = \"block\";\n    }\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createTask);\n\n//# sourceURL=webpack://todo-list/./src/handleDom.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _handleDom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./handleDom */ \"./src/handleDom.js\");\n\n(0,_handleDom__WEBPACK_IMPORTED_MODULE_0__.handleClicks)();\n\n//# sourceURL=webpack://todo-list/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _handleDom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./handleDom */ \"./src/handleDom.js\");\n\n(0,_handleDom__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//# sourceURL=webpack://todo-list/./src/index.js?");
 
 /***/ })
 
