@@ -40,7 +40,7 @@ nav {
 }
 button {
     border: 2px solid rgb(136, 136, 201);
-    border-radius: 10px;
+    border-radius: 6px;
     background: none;
     font-size: 0.9rem;
     padding: 0.5rem
@@ -61,13 +61,42 @@ button {
     padding: 20px;
     margin-top: 8rem;
     margin-left: auto;
-    margin-right: 3.5rem;
-    width: 25%;
+    margin-right: 3.6rem;
+    width: 20%;
     height: 50%;
-    background-color: #132036;
+    background-color: #111b2e;
+    border-radius: 10px;
 }
 .modalTitle {
     padding-bottom: 0.8rem;
     font-size: 1.3rem;
     border-bottom: 2px solid rgb(136, 136, 201);
+}
+.taskName {
+    width: 100%;
+    height: 2.6rem;
+    border: 2px solid rgb(136, 136, 201);
+    background: none;
+    margin-top: 1rem;
+    padding-left: 0.6rem;
+    border-radius: 5px;
+    color: white;
+}
+.taskDesc {
+    width: 100%;
+    height: 10rem;
+    border: 2px solid rgb(136, 136, 201);
+    background: none;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    padding-left: 0.6rem;
+    border-radius: 5px;
+    color: white;
+}
+input, textarea {
+    font-size: 1rem;
+}
+input:focus, textarea:focus {
+    outline: none !important;
+    border:2px solid rgb(208, 208, 255);
 }

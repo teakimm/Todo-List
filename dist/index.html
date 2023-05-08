@@ -9,32 +9,31 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-    <nav class="navbar">
+    <!-- <nav class="navbar">
         <p>toDoList</p>
     </nav>
     <div class="content">
         <div class="sidebar"></div>
         <div class="main">
             <div class="taskContainer">
-                <p class="currentTask">All Tasks</p>
-                <button class="newTask">New Task +</button>
+                <p class="currentTask">All</p>
+                <button class="newTask">+ New Task</button>
             </div>
             <div class="modal">
                 <div class="modalContent">
                     <p class="modalTitle">New Task</p>
                     <div class="taskInputs">
-                        <form action="">
+                        <form action="javascript:test()" class="form">
                             <label for="taskName"></label>
-                            <input type="text" class="taskName" placeholder="Task Name">
+                            <input type="text" class="taskName" placeholder="Task Name" required>
                             <label for="taskDesc"></label>
-                            <input type="text" class="taskDesc" placeholder="Description">
-                            <button class="createTask">Create</button>
-                            <button class="cancel">Cancel</button>
+                            <textarea name="taskDesc" cols="30" rows="10" class="taskDesc" placeholder="Description"></textarea>
+                            <input type="button" onclick="test()" value="Create">
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </body>
 </html>
