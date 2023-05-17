@@ -1,4 +1,4 @@
-import modal from "./handleDom";
+import clickHandler from "./handleDom";
 import initialRender from "./initialRender";
 initialRender();
-modal();
+clickHandler();

@@ -30,7 +30,7 @@ function createContent() {
 
     const taskInputs = new elementConstructor("div", "taskInputs");
     const form = new elementConstructor("form", "form", "");
-    form.setAttribute("action", "javascript:submit()");
+    // form.setAttribute("action", "javascript:submit()");
 
     const taskName = new elementConstructor("input", "taskName", "");
     taskName.setAttribute("type", "test");

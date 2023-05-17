@@ -1,14 +1,17 @@
-
-function modal() {
-  const taskBtn = document.querySelector(".newTask");
+import handleFormSubmission from "./createTodo";
+function clickHandler() {
   const modal = document.querySelector(".modal");
-  taskBtn.onclick = function() {
-    modal.style.display = "block";
-  }
-  window.onclick = function(event) {
-    if (event.target == modal) {
+  const formSubmit = document.querySelector(".submit");
+  document.addEventListener("click", e => {
+    if(e.target.className === "newTask") {
+      modal.style.display = "block";
+    } else if(e.target.className === "modal") {
+      modal.style.display = "none";
+    } else if(e.target === formSubmit) {
+      handleFormSubmission();
       modal.style.display = "none";
     }
-  }
+  });
 }
-export default modal;
+
+export default clickHandler;
