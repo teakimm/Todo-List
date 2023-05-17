@@ -17,13 +17,13 @@ nav {
     justify-content: center;
     align-items: center;
 }
-.sidebar {
+.sideBar {
     background-color: #0d1117;
 }
 .content {
     display: flex;
 }
-.sidebar {
+.sideBar {
     flex: 1;
     min-height: 100vh;
 }
