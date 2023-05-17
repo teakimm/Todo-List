@@ -25,13 +25,13 @@ nav {
 }
 .sideBar {
     flex: 1;
-    min-height: 100vh;
+    min-height: 92vh;
 }
 .main {
     flex: 4;
     padding: 4rem;
 }
-.taskContainer {
+.infoBar {
     border-bottom: 3px solid rgb(136, 136, 201);
     display: flex;
     justify-content: space-between;
@@ -56,16 +56,14 @@ button {
     background-color: rgba(0, 0, 0, 0.288);
 }
 .modalContent {
-    position: relative; 
-    background-color: white;
+    position: fixed; 
     padding: 20px;
-    margin-top: 8rem;
-    margin-left: auto;
-    margin-right: 3.6rem;
-    width: 20%;
-    height: 50%;
     background-color: #111b2e;
     border-radius: 10px;
+    top: 20%;
+    right: 3%;
+    width: 375px;
+    height: 450px;
 }
 .modalTitle {
     padding-bottom: 0.8rem;

@@ -16,9 +16,12 @@ function createContent() {
     const main = new elementConstructor("div", "main", "");
 
     const taskContainer = new elementConstructor("div", "taskContainer", "");
-    const currentTask = new elementConstructor("p", "currentTask", "All");
+    const infoBar = new elementConstructor("div", "infoBar", "");
+    const currentProject = new elementConstructor("p", "currentProject", "All");
     const newTask = new elementConstructor("button", "newTask", "+ New Task");
-    taskContainer.append(currentTask, newTask);
+    infoBar.append(currentProject, newTask);
+    const taskList = new elementConstructor("div", "taskList", "");
+    taskContainer.append(infoBar, taskList);
 
     const modal = new elementConstructor("div", "modal");
     const modalContent = new elementConstructor("div", "modalContent");
@@ -27,14 +30,13 @@ function createContent() {
 
     const taskInputs = new elementConstructor("div", "taskInputs");
     const form = new elementConstructor("form", "form", "");
+    form.setAttribute("action", "javascript:submit()");
 
     const taskName = new elementConstructor("input", "taskName", "");
     taskName.setAttribute("type", "test");
     taskName.setAttribute("placeholder", "Task Name");
     const taskDesc = new elementConstructor("textarea", "taskDesc", "");
     taskDesc.setAttribute("name", "taskDesc");
-    taskDesc.setAttribute("cols", "30");
-    taskDesc.setAttribute("rows", "10");
     taskDesc.setAttribute("placeholder", "Description");
     const createTask = new elementConstructor("input", "submit", "");
     createTask.setAttribute("type", "button");

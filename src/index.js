@@ -1,9 +1,4 @@
-import createTask from "./handleDom";
+import modal from "./handleDom";
 import initialRender from "./initialRender";
-
-
-
-
 initialRender();
-createTask();
-
+modal();
