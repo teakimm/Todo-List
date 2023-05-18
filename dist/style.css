@@ -98,3 +98,37 @@ input:focus, textarea:focus {
     outline: none !important;
     border:2px solid rgb(208, 208, 255);
 }
+.submit {
+    border: 2px solid rgb(136, 136, 201);
+    border-radius: 6px;
+    background: none;
+    font-size: 0.9rem;
+    padding: 0.5rem
+}
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+[type=radio] + img {
+    cursor: pointer;
+}
+  
+[type=radio]:checked + img {
+    box-sizing: border-box;
+    border: 2px solid rgb(208, 208, 255);
+    border-radius: 5px;
+}
+.priorityContainer img {
+    max-width: 30px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+.priorityContainer {
+    margin: 1rem;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+}

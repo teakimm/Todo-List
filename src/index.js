@@ -1,4 +1,3 @@
-import clickHandler from "./handleDom";
-import initialRender from "./initialRender";
+import { initialRender, clickHandler } from "./render";
 initialRender();
 clickHandler();
